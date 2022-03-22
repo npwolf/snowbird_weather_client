@@ -17,6 +17,8 @@ jobs:
       - name: Install yarn
         run: npm install --global yarn
       - name: Install quasar
-        run: yarn global add @quasar/cli
+        run: npm install --global yarn
+      - name: Install dependencies
+        run: yarn install
       - name: Quasar Build
         run: quasar build
