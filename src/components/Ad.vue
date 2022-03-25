@@ -1,24 +1,24 @@
 <template>
-<div id="801320552"></div>
+  <div id="801320552"></div>
 </template>
 
 <script>
 export default {
   name: "Ad",
   methods: {
-    initVariables: function() {
-      window._mNHandle = window._mNHandle || {};
-      window._mNHandle.queue = window._mNHandle.queue || [];
-    },
-    loadTag: function() {
-      window._mNHandle.queue.push(function() {
-        window._mNDetails.loadTag("801320552", "728x90", "801320552");
-      });
+    initializeMediaNetAdd: function () {
+      try {
+        window._mNHandle.queue.push(function () {
+          window._mNDetails.loadTag("801320552", "728x90", "801320552");
+        });
+      }
+      catch (error) {
+        console.log("media.net", error);
+      }
     }
   },
-  mounted() {
-    this.initVariables();
-    this.loadTag();
+  mounted () {
+    this.initializeMediaNetAdd();
   }
 };
 </script>
