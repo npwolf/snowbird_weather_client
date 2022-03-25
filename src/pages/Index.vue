@@ -1,5 +1,6 @@
 <template>
   <q-page class="q-pa-sm main-page">
+    <Ad />
     <div class="col">
       <div class="city-temp q-gutter-md">
         <AddCity />
@@ -15,6 +16,7 @@
 
 <script>
 import { defineComponent } from "vue";
+import Ad from "./../components/Ad.vue";
 import AddCity from "./../components/AddCity.vue";
 import MonthlyWeather from "./../components/MonthlyWeather.vue";
 import IdealTemp from "./../components/IdealTemp.vue";
