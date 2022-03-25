@@ -12,7 +12,7 @@ export default {
     },
     loadTag: function() {
       window._mNHandle.queue.push(function() {
-        window._mNDetails.loadTag("801320552", "728x90", "A_UNIQUE_ID");
+        window._mNDetails.loadTag("801320552", "728x90", "801320552");
       });
     }
   },
